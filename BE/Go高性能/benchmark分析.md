@@ -16,9 +16,10 @@ func BenchmarkFib(b *testing.B) {
 }
 ```
 ```
-$ go test -bench='Fib$' -benchtime=5s -cpu=2,4 -count=3 .
+$ go test -bench='Fib$' -benchtime=5s -cpu=2,4 -count=3 -cpuprofile=cpu.pprof .
 ```
 测试以Fib开头的性能测试类，测试5s，3轮,分别用2、4核; -benchtime=30x 即执行30次
+生成pprof文件形式
 
 ```
 BenchmarkFib-8               202           5980669 ns/op
