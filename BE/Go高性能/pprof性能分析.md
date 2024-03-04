@@ -1,6 +1,6 @@
 # 生成pprof
 使用一个易用性更强的库 pkg/profile 来采集性能数据，pkg/profile 封装了 runtime/pprof 的接口，使用起来更简单。
-以下是内存
+以下是<b>内存</b>
 ```
 package main
 
@@ -33,7 +33,7 @@ func main() {
 }
 
 ```
-比如我们想度量 concat() 的 CPU 性能数据，只需要一行代码即可生成 profile 文件。
+比如我们想度量 concat() 的 <b>CPU</b> 性能数据，只需要一行代码即可生成 profile 文件。
 ```
 import (
 	"github.com/pkg/profile"
